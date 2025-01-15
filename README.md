@@ -49,7 +49,7 @@ To login use any dummy mail address of the format abc@xyz.com and any password.
 
 1. **Clone the Repository**:
    ```bash
-   git clone [https://github.com/your-username/task-manager.git](https://github.com/Raltoos/ToDo-)
+   git clone https://github.com/Raltoos/ToDo-
    ```
 
 2. **Install Dependencies**
