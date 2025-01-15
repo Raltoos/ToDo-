@@ -3,6 +3,7 @@
   import LoginPage from "./components/Login";
   import { ThemeProvider } from "./components/ThemeProvider";
   import { useSelector } from "react-redux";
+import WeatherUpdate from "./components/WeatherUpdate";
 
   const App = () => {
     const isAuth = useSelector((state) => state.auth.isAuthenticated);
@@ -13,6 +14,7 @@
       <ThemeProvider>
         <div className="w-screen h-[100vh] bg-[#fbfdfc] dark:bg-[#1f1f1f] overflow-x-hidden">
           <Header />
+          <WeatherUpdate />
           {!isAuth && <LoginPage />}
           
           {isAuth && <Main />}

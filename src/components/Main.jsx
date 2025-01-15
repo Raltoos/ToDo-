@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import TaskInput from "./TaskInput";
 import TaskList from "./TaskList";
-import { addTodo } from "../reducers/todoSlice";
+import { addTodoInit } from "../reducers/todoSlice";
 import { useDispatch } from "react-redux";
 
 const Main = () => {
@@ -9,7 +9,9 @@ const Main = () => {
 
   useEffect(() => {
     const savedTasks = JSON.parse(localStorage.getItem("tasks")) || [];
-    savedTasks.forEach((task) => dispatch(addTodo(task)));
+    console.log(savedTasks);
+    
+    savedTasks.forEach((task) => dispatch(addTodoInit(task)));
   }, []);
 
   return (

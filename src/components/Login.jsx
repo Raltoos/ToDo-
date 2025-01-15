@@ -21,7 +21,7 @@ const LoginPage = () => {
   const inputClasses = "appearance-none w-full pl-10 pr-10 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 sm:text-sm transition-colors duration-200";
 
   return (
-    <div className="mt-40 flex items-center justify-center bg-gray-50px-4 sm:px-6 lg:px-8">
+    <div className="mt-20 flex items-center justify-center bg-gray-50px-4 sm:px-6 lg:px-8 m-5">
       <div className="max-w-md w-full space-y-8">
         <div className="text-center">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Welcome</h2>
