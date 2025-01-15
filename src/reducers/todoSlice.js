@@ -1,8 +1,15 @@
 import { createSlice, nanoid } from "@reduxjs/toolkit";
 
 const initialState = {
-    todos: [{ id: 1, text: "Hello World", completed: true, priority: "medium" }]
-}
+    todos: [
+        { id: 1, text: "Prepare monthly sales report", completed: false, priority: "high" },
+        { id: 2, text: "Finalize budget for Q2 projects", completed: true, priority: "medium" },
+        { id: 3, text: "Update client feedback records", completed: false, priority: "low" },
+        { id: 4, text: "Schedule team performance reviews", completed: false, priority: "medium" },
+        { id: 5, text: "Develop presentation for annual meeting", completed: true, priority: "high" },
+    ],
+};
+
 
 export const todoSlice = createSlice({
     name: 'todo',
