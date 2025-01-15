@@ -26,7 +26,7 @@ A simple and efficient notes manager app built with React and Redux to demonstra
   - Optimized for different screen sizes for a user-friendly experience.
 
 - **Light and Dark Mode Options**:
-- 
+
 - **Redux Auth Management**:
 
 ## Technologies Used
