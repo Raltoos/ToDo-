@@ -2,12 +2,18 @@ import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { addTodo } from "../reducers/todoSlice";
 
+import { GoBell } from "react-icons/go";
+import { AiOutlineRetweet } from "react-icons/ai";
+import { CiCalendar } from "react-icons/ci";
+
 const TaskInput = () => {
   const dispatch = useDispatch();
   const theme = useSelector((state) => state.theme.mode);
   const [task, setTask] = useState("");
 
   function handleTaskCreation() {
+    if (task.trim() == "") return;
+
     dispatch(addTodo(task));
     setTask("");
   }
@@ -27,10 +33,16 @@ const TaskInput = () => {
         value={task}
       />
       <div className="w-full h-[25%] flex justify-between items-center">
-        <div>
-          <button>X</button>
-          <button>Y</button>
-          <button>Z</button>
+        <div className="flex gap-3">
+          <button>
+            <GoBell className="size-5" />
+          </button>
+          <button>
+            <AiOutlineRetweet className="size-5" />
+          </button>
+          <button>
+            <CiCalendar className="size-5" />
+          </button>
         </div>
         <div>
           <button
